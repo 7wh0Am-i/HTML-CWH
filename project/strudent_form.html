@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><b> Registration Form</b></h1>
+    </header>
+    <main>
+        <div>
+            <form action="#">
+            <label for="name"><b>FirstName:</b>
+                <input type="text" name="text" placeholder="Enter your name" required/>
+            </label>
+        <br>
+            <label for="name"><b>LastName:</b>
+                <input type="text" name="text" placeholder="Enter your last name" required/>
+            </label>
+        <br>
+            <label for="email"><b>Email:</b>
+                <input type="email" name="email" placeholder="Enter your email" required/>
+            </label>
+        <br>
+            <label for="password"><b>Password:</b>
+                <input type="password" name="password" placeholder="Enter your password" required/>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="gender"><b>Gender:</b><br>
+                <input type="radio" name="gender" value="male"/> Male <br>
+                <input type="radio" name="gender" value="female"/> Female <br>
+                <input type="radio" name="gender" value="other"/> Other <br>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="age"><b>Age:</b>
+                <input type="number" name="age" placeholder="Enter your age" required/>
+            </label>
+        </div>
+        <div>
+            <label for="preferences"><b>Preferences:</b><br>
+                <input type="checkbox" name="checkbox"/> Acrylic Painting <br>
+                <input type="checkbox" name="checkbox"/> Oil Painting <br>
+                <input type="checkbox" name="checkbox"/> Watercolor Painting 
+            </label>
+        </div>
+        <div>
+            <label for="select option"><b>Select Option:</b>
+                <select name="options">
+                    <option value="option1">School Student</option>
+                    <option value="option2">College Student</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="bio"><b>BIO :</b>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter your Bio here..."></textarea>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+        </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

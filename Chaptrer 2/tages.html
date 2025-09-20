@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- heading tag is used to define heading in html. -->
+    <h1>Hello, world!</br> how are you?</h1>
+    <h2>This is h2 heading</h2>
+    <h3>This is h3 heading</h3>
+    <h4>This is h4 heading</h4>
+    <h5>This is h5 heading</h5>
+    <h6>This is h6 heading</h6>
+   <!-- This is a paragraph tag -->
+    <p>This is a paragraph</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi dolore delectus similique ad ullam hic doloremque beatae incidunt nisi! Voluptatibus rerum harum soluta maiores debitis ut ipsam enim doloribus eum eaque minima non vitae, dolore nam minus et earum. Minima ipsam corrupti soluta, aperiam nam earum enim nemo est consequatur tenetur? Est, enim deleniti? Non.</p>
+   <!-- Anchor tag is used to link one page to another page. -->
+    <a href="https://www.google.com">This is a link to google<br></a>
+   <!-- Image tag is used to insert image in html page. -->
+    <img src="https://m.media-amazon.com/images/M/MV5BZjA0MDgyYmItNzkzMC00OTM2LThlYzktMWMxZWU3ZGNkNDI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="This is a image"><br>
+   <!-- bold text -->
+    <b>This text is bold</b><br>
+    <!-- italic text -->
+    <i>This text is italic</i><br>
+    <!-- strong text -->
+    <strong>This text is strong</strong><br>
+    <!-- underline text -->
+    <u>This text is underline</u><br>
+    <!-- strikethrough text -->
+    <s>This text is strikethrough</s><br>
+    <!-- line break tag is used to break the line -->
+    <br>
+    <!-- horizontal line tag is used to insert horizontal line -->
+    <hr>
+    <!-- subscript text -->
+    <p>H<sub>2</sub>O</p><br>
+    <!-- pre tag -->
+     <pre>from telegram.ext import ApplicationBuilder, CommandHandler
+from api.start import start
+from api.get_num import get_num
+
+# Enter your Telegram bot token here
+TOKEN = "TOKEN"
+
+def main():
+    """ Start the bot """
+    app = ApplicationBuilder().token(TOKEN).build()
+
+    # Add command handlers with proper formatting
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("num", get_num))
+
+    app.run_polling()
+
+if __name__ == '__main__':
+    main()</pre>
+</body>
+</html>
